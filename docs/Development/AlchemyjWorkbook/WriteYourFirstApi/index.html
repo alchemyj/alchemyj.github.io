@@ -1,0 +1,235 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Write your first Java API · AlchemyJ</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="# Write your first Java API"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Write your first Java API · AlchemyJ"/><meta property="og:type" content="website"/><meta property="og:url" content="//"/><meta property="og:description" content="# Write your first Java API"/><meta property="og:image" content="/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="/css/atom-one-dark-reasonable.css"/><script src="/js/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="https://www.alchemyj.io" id="siteSubject1" target="_self"><span id="siteSubject2">Alchemy</span><span id="siteSubject3">J</span></a><span id="siteSubject4"> by</span><span> </span><a href="http://www.axisoft.com" rel="noopener noreferrer" data-type="external" data-content="http://www.axisoft.com" id="siteSubject5" target="_blank">Axisoft</a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="https://www.alchemyj.io/features" target="_self">Features</a></li><li class=""><a href="https://www.alchemyj.io/contact-us" target="_self">Contact Us</a></li><li class="siteNavGroupActive"><a href="/docs/GetStarted/GetStarted" target="_self">Docs</a></li><li class=""><a href="https://www.alchemyj.io/about-us" target="_self">About Us</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>AlchemyJ Workbook</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Get started<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/GetStarted/GetStarted">Get started</a></li><li class="navListItem"><a class="navItem" href="/docs/GetStarted/Install">Install AlchemyJ</a></li><li class="navListItem"><a class="navItem" href="/docs/GetStarted/SetupYourMicrosoftExcel">Set up your Microsoft Excel</a></li><li class="navListItem"><a class="navItem" href="/docs/GetStarted/WriteYourFirstRestApi">Write your first REST API</a></li><li class="navListItem"><a class="navItem" href="/docs/GetStarted/PreviewYourFirstRestApi">Preview your first REST API</a></li><li class="navListItem"><a class="navItem" href="/docs/GetStarted/BuildAndRunYourRestApi">Build and run your REST API</a></li><li class="navListItem"><a class="navItem" href="/docs/GetStarted/GoingFurther">Going further</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Terms &amp; concepts<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/TerminologyAndConcepts/TerminologyAndConcepts">Terms and concepts</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Samples &amp; tutorials<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Recipe book</h4><ul><li class="navListItem"><a class="navItem" href="/docs/SamplesNTutorials/RecipeBook/RecipeBook">Recipes</a></li><li class="navListItem"><a class="navItem" href="/docs/SamplesNTutorials/RecipeBook/AccessingDatabase">Accessing database</a></li><li class="navListItem"><a class="navItem" href="/docs/SamplesNTutorials/RecipeBook/DataValidationBackend">Data validation (Backend)</a></li><li class="navListItem"><a class="navItem" href="/docs/SamplesNTutorials/RecipeBook/DataValidationUi">Data validation (UI)</a></li><li class="navListItem"><a class="navItem" href="/docs/SamplesNTutorials/RecipeBook/WorkingWithExternalFile">Reading and writing text files</a></li><li class="navListItem"><a class="navItem" href="/docs/SamplesNTutorials/RecipeBook/InvokingExternalApi">Making web service requests</a></li><li class="navListItem"><a class="navItem" href="/docs/SamplesNTutorials/RecipeBook/SendingEmail">Sending email</a></li><li class="navListItem"><a class="navItem" href="/docs/SamplesNTutorials/RecipeBook/CatchingTheError">Raising exceptions</a></li><li class="navListItem"><a class="navItem" href="/docs/SamplesNTutorials/RecipeBook/UsingArrayForLibraryFunction">Returning multiple cells</a></li><li class="navListItem"><a class="navItem" href="/docs/SamplesNTutorials/RecipeBook/ConstructingAndParsingJson">Constructing JSON strings</a></li><li class="navListItem"><a class="navItem" href="/docs/SamplesNTutorials/RecipeBook/ParsingJsonString">Parsing JSON strings</a></li><li class="navListItem"><a class="navItem" href="/docs/SamplesNTutorials/RecipeBook/HavingApplicationConfigurations">Reading application configuration</a></li><li class="navListItem"><a class="navItem" href="/docs/SamplesNTutorials/RecipeBook/PerformanceNOptimization">Improve performance</a></li><li class="navListItem"><a class="navItem" href="/docs/SamplesNTutorials/RecipeBook/AuthenticationWithLdap">Authenticating a user in Java APIs</a></li><li class="navListItem"><a class="navItem" href="/docs/SamplesNTutorials/RecipeBook/IntegratingWithYourExistingCode">Using AlchemyJ Java API in a project</a></li><li class="navListItem"><a class="navItem" href="/docs/SamplesNTutorials/RecipeBook/CallingExternalJavaFunction">Calling external Java functions</a></li><li class="navListItem"><a class="navItem" href="/docs/SamplesNTutorials/RecipeBook/SettingUpTheLicenseFile">Setting up the license file</a></li></ul></div><li class="navListItem"><a class="navItem" href="/docs/SamplesNTutorials/Tutorials">Tutorials</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Development<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">AlchemyJ Workbook</h4><ul><li class="navListItem"><a class="navItem" href="/docs/Development/AlchemyjWorkbook/Introduction">Introduction</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/Development/AlchemyjWorkbook/WriteYourFirstApi">Write your first Java API</a></li><li class="navListItem"><a class="navItem" href="/docs/Development/AlchemyjWorkbook/AlchemyjStudio">AlchemyJ Studio</a></li><li class="navListItem"><a class="navItem" href="/docs/Development/AlchemyjWorkbook/SysRuntimeWorksheet">SysRuntime Worksheet</a></li><li class="navListItem"><a class="navItem" href="/docs/Development/AlchemyjWorkbook/SysConfigWorksheet">SysConfig Worksheet</a></li><li class="navListItem"><a class="navItem" href="/docs/Development/AlchemyjWorkbook/AppConfigWorksheet">AppConfig Worksheet</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Business logic</h4><ul><li class="navListItem"><a class="navItem" href="/docs/Development/BusinessLogic/Tutorial">Tutorial</a></li><li class="navListItem"><a class="navItem" href="/docs/Development/BusinessLogic/InputAndOutput">Input and output</a></li><li class="navListItem"><a class="navItem" href="/docs/Development/BusinessLogic/AddingBusinessLogic">Adding business logic</a></li><li class="navListItem"><a class="navItem" href="/docs/Development/BusinessLogic/DbSchemaWorksheet">DB Schema Worksheet</a></li><li class="navListItem"><a class="navItem" href="/docs/Development/BusinessLogic/DataDictionaryWorksheet">Data Dictionary Worksheet</a></li><li class="navListItem"><a class="navItem" href="/docs/Development/BusinessLogic/AlchemyjModelingBestPractice">AlchemyJ modeling best practice</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Configuring Java API</h4><ul><li class="navListItem"><a class="navItem" href="/docs/Development/ConfiguringJavaApi/Introduction">Introduction to AlchemyJ Java API</a></li><li class="navListItem"><a class="navItem" href="/docs/Development/ConfiguringJavaApi/PackageDefinitionWorksheet">Package Definition Worksheet</a></li><li class="navListItem"><a class="navItem" href="/docs/Development/ConfiguringJavaApi/ClassDefinitionWorksheet">Class Definition Worksheet</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Configuring REST API</h4><ul><li class="navListItem"><a class="navItem" href="/docs/Development/ConfiguringRestApi/Introduction">Introduction to AlchemyJ REST API</a></li><li class="navListItem"><a class="navItem" href="/docs/Development/ConfiguringRestApi/Tutorial">Tutorial</a></li><li class="navListItem"><a class="navItem" href="/docs/Development/ConfiguringRestApi/ControllerWorksheet">Controller Worksheet</a></li><li class="navListItem"><a class="navItem" href="/docs/Development/ConfiguringRestApi/EndpointWorksheet">Endpoint Worksheet</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Enabling REST security</h4><ul><li class="navListItem"><a class="navItem" href="/docs/Development/EnablingRestSecurity/Tutorial">Tutorial</a></li><li class="navListItem"><a class="navItem" href="/docs/Development/EnablingRestSecurity/SecurityAuthenticationWorksheet">Security Authentication Worksheet</a></li><li class="navListItem"><a class="navItem" href="/docs/Development/EnablingRestSecurity/SecurityUserDetailsServiceWorksheet">Security User Details Service Worksheet</a></li><li class="navListItem"><a class="navItem" href="/docs/Development/EnablingRestSecurity/SecurityResourceAuthWorksheet">Security Resource Auth worksheet</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Testing &amp; debugging<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/TestingAndDebugging/Tutorial">Tutorial</a></li><li class="navListItem"><a class="navItem" href="/docs/TestingAndDebugging/PreviewYourWorkInExcel">Preview your work in Excel</a></li><li class="navListItem"><a class="navItem" href="/docs/TestingAndDebugging/TestYourApiByRunningUnitTest">Test your API by running unit test</a></li><li class="navListItem"><a class="navItem" href="/docs/TestingAndDebugging/EnableTheDebuggingMode">Enable the Debugging Mode</a></li><li class="navListItem"><a class="navItem" href="/docs/TestingAndDebugging/DefineYourOwnTestingData">Define your own testing data</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Reference<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">AJ Excel Extended Functions</h4><ul><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/Index">Index</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/AuthenLdap">AuthenLdap</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/CallFunction">CallFunction</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/CallWsRest">CallWsRest</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/CallWsSoap">CallWsSoap</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/CheckDataItem">CheckDataItem</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/CountRec">CountRec</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/CreateRec">CreateRec</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/DeleteRec">DeleteRec</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/ExecuteSp">ExecuteSP</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/ExecuteSql">ExecuteSql</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/FilterArray">FilterArray</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/FilterJson">FilterJson</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/GetAddress">GetAddress</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/GetLastUsedCellAddress">GetLastUsedCellAddress</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/GetModelError">GetModelError</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/GetSystemError">GetSystemError</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/MakeJson">MakeJson</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/MakeJsonFromSchema">MakeJsonFromSchema</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/MakeJsonFromTable">MakeJsonFromTable</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/MergeRec">MergeRec</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/PopulateJsonToTable">PopulateJsonToTable</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/RaiseError">RaiseError</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/ReadFile">ReadFile</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/ReadRec">ReadRec</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/RegExpCount">RegExpCount</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/RegExpMatch">RegExpMatch</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/SendEmail">SendEmail</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/SortArray">SortArray</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/UpdateRec">UpdateRec</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/AlchemyjLibraryFunctionsIndex/WriteFile">WriteFile</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Debugging Actions</h4><ul><li class="navListItem"><a class="navItem" href="/docs/Reference/DebuggingActions/Index">Index</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/DebuggingActions/generate-debug-excel">generate-debug-excel</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/DebuggingActions/set-formula-to-cell">set-formula-to-cell</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/DebuggingActions/set-value-to-cell">set-value-to-cell</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/DebuggingActions/view-aj-library-inout">view-aj-library-inout</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/DebuggingActions/view-cell">view-cell</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/DebuggingActions/view-cookies">view-cookies</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/DebuggingActions/view-env-props">view-env-props</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/DebuggingActions/view-exception">view-exception</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/DebuggingActions/view-fun-point-inout">view-fun-point-inout</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/DebuggingActions/view-req-body">view-req-body</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/DebuggingActions/view-req-header">view-req-header</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/DebuggingActions/view-req-param">view-req-param</a></li><li class="navListItem"><a class="navItem" href="/docs/Reference/DebuggingActions/view-session">view-session</a></li></ul></div><li class="navListItem"><a class="navItem" href="/docs/Reference/SupportedExcelFunctions">Supported Excel functions</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">FAQ<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/Faq/Faq">FAQ</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="write-your-first-java-api"></a><a href="#write-your-first-java-api" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Write your first Java API</h1>
+<p>This document will guide you through the process of setting up a Java API using AlchemyJ.  At the end, you will be able to build a Java API which retrieves customer data from a data without writing any Java code.</p>
+<h2><a class="anchor" aria-hidden="true" id="before-we-start"></a><a href="#before-we-start" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Before we start</h2>
+<p>As this project relies on data in a table called tb_customer. Create the below table in your database first.</p>
+<p><img src="WriteYourFirstApiImg/clip_image001.png" alt="image-20191224095051922"></p>
+<h2><a class="anchor" aria-hidden="true" id="create-a-alchemyj-workbook"></a><a href="#create-a-alchemyj-workbook" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create a AlchemyJ Workbook</h2>
+<ol>
+<li><p>Launch Microsoft Excel and start with a new blank workbook. Save as Customer Management Service.xlsm. Please ensure that you select <strong>Excel Macro-Enabled Worksheet</strong> as the file type.</p></li>
+<li><p>Go to AlchemyJ tab, click on &quot;New Project&quot;.</p></li>
+</ol>
+<p><img src="WriteYourFirstApiImg/clip_image003.jpg" alt=""></p>
+<ol start="3">
+<li>Three system worksheets (%%SysRuntime, %%SysConfig, and %%AppConfig) should be created and initialized.</li>
+</ol>
+<p><img src="WriteYourFirstApiImg/clip_image004.png" alt=""></p>
+<ol start="4">
+<li>In System Configuration Worksheet, below configurations need to be modified to adapt to your local environment. Properties not defined below could be left as default or you can modify them according to your need. Refer to <a href="SysConfigWorksheet">SysConfig Worksheet</a> for details of each configuration.</li>
+</ol>
+<table>
+<thead>
+<tr><th>Name</th><th>Description</th><th>Sample Value</th></tr>
+</thead>
+<tbody>
+<tr><td>DB Connection String</td><td>Database connection string for this AlchemyJ Workbook</td><td>Driver={MySQL ODBC 8.0 Unicode  Driver};Server=192.168.5.150;Port=3306; DB=aj_sample_mysql57;UID=aj_user; PWD=xxxxxxx;OPTION=3;</td></tr>
+<tr><td>Database Type</td><td>Data base Type, Either MySQL or Oracle</td><td>MySQL</td></tr>
+<tr><td>License File Location</td><td>Local path of AlchemyJ license file if you are using AlchemyJ Enterprise Edition</td><td>D:\AJ\Tool\License Generator\12345-computerA-20200102132223.license</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="define-a-business-logic-sheet"></a><a href="#define-a-business-logic-sheet" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Define a Business Logic Sheet</h2>
+<ol>
+<li>Create a new worksheet and name it <strong>GetCustomer</strong>. We will put the formulas for the Get Customer function point on this worksheet.</li>
+<li>User can use this function to retrieve a customer record from the database by providing a customer name. We expect the input value will be set in cell C12.</li>
+<li>Use the input field C12 to concatenate the SQL statement to retrieve the record from database table which will be used in  <a href="../../Reference/AlchemyjLibraryFunctionsIndex/ExecuteSql">ExecuteSql </a>.</li>
+</ol>
+<pre><code class="hljs">=<span class="hljs-string">"SELECT CUSTOMER_NAME, DOB, GENDER, CUSTOMER_LVL, TELEPHONE FROM TB_CUSTOMER WHERE CUSTOMER_NAME ='"</span> &amp; <span class="hljs-symbol">C12</span> &amp;<span class="hljs-string">"'"</span>;
+</code></pre>
+<ol start="4">
+<li>Select B4:F4 and input following formula just as in B7. Press CTRL+ SHIFT+ ENTER after you finished inputting the formula to make it become an <a href="../../SamplesNTutorials/RecipeBook/UsingArrayForLibraryFunction">Array Formula</a>.</li>
+</ol>
+<pre><code class="hljs">=<span class="hljs-built_in">IF</span>(AlchemyJ_FunctionPoint = <span class="hljs-string">"Get Customer"</span>, ExecuteSql(<span class="hljs-symbol">B10</span>), <span class="hljs-string">""</span>)
+</code></pre>
+<p><a href="WriteYourFirstApiImg/image-20191226191337328.png"><img src="WriteYourFirstApiImg/image-20191226191337328.png" alt=""></a></p>
+<h2><a class="anchor" aria-hidden="true" id="define-java-class-parameter"></a><a href="#define-java-class-parameter" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Define Java Class Parameter</h2>
+<ol>
+<li>Go to AlchemyJ toolbar, click New Definition, then Java Class.</li>
+</ol>
+<p><img src="WriteYourFirstApiImg/clip_image007.png" alt=""></p>
+<ol start="2">
+<li>The &quot;##ClassDefinition&quot; worksheet should be created and initialized.</li>
+</ol>
+<p><a href="WriteYourFirstApiImg/clip_image009.jpg"><img src="WriteYourFirstApiImg/clip_image009.jpg" alt="img"></a></p>
+<ol start="3">
+<li>In Basic Settings section, key in the values as shown below for the basic settings. This define the class name and the package it should be in.</li>
+</ol>
+<table>
+<thead>
+<tr><th><strong>Item</strong></th><th><strong>Value</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>Configuration Type</td><td>Java Class</td></tr>
+<tr><td>Package Name</td><td>com.alchemydemo.customer</td></tr>
+<tr><td>Class Name</td><td>CustomerService</td></tr>
+</tbody>
+</table>
+<ol start="4">
+<li>Next we define the function, getCustomerByName that this class will provide. In Functions section (for output &amp; declaration of function), key in the values shown below. The belwo setting defines the function output as an Object call Customer. The structure of this object will be defined in the Package Definition Worksheet in later steps.</li>
+</ol>
+<table>
+<thead>
+<tr><th><strong>Function Point</strong></th><th><strong>Method Name</strong></th><th><strong>Return Type</strong></th><th><strong>Return Class</strong></th><th><strong>Return Value Cell Address</strong></th><th><strong>List Row Size</strong></th><th><strong>DB Operation Type</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>Get Customer</td><td>getCustomerByName</td><td>Object</td><td>Customer</td><td>GetCustomer!B4</td><td>1</td><td>Non Transaction</td></tr>
+</tbody>
+</table>
+<ol start="5">
+<li>Our model expects the customer name at GetCustomer!C12. Therefore, in Function Input Parameters section, we define an input parameter called name for method getCustomerByName.  Name should be a string so it's parameter type is Basic Data and Parameter is String. Set Write to Cell Address to GetCustomer!C12 so that when the method will set the input value to GetCustomer!C12 at run-time.</li>
+</ol>
+<table>
+<thead>
+<tr><th><strong>Method Name</strong></th><th><strong>Parameter Type</strong></th><th><strong>Parameter Class</strong></th><th><strong>Parameter Name</strong></th><th><strong>Write to Cell Address</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>getCustomerByName</td><td>Basic Data</td><td>String</td><td>name</td><td>GetCustomer!C12</td></tr>
+</tbody>
+</table>
+<ol start="6">
+<li>In Sheet Details Section, add all the worksheets used in this API.</li>
+</ol>
+<table>
+<thead>
+<tr><th><strong>Sheet Name</strong></th><th><strong>Start Address</strong></th><th><strong>End Address</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>%%AppConfig</td><td>A1</td><td>B2</td></tr>
+<tr><td>%%SysConfig</td><td>A1</td><td>B26</td></tr>
+<tr><td>%%SysRuntime</td><td>A1</td><td>B5</td></tr>
+<tr><td>GetCustomer</td><td>A1</td><td>G18</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="define-java-package-parameter"></a><a href="#define-java-package-parameter" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Define Java Package Parameter</h2>
+<ol>
+<li><p>Next we will define the package of this Java API.  Go to AlchemyJ toolbar, click <strong>New Definition</strong>, then Java Package. <img src="WriteYourFirstApiImg/clip_image007.png" alt=""></p></li>
+<li><p>The “__PackageDefinition” worksheet should be created and initialized.</p></li>
+</ol>
+<p><a href="WriteYourFirstApiImg/clip_image011.jpg"><img src="WriteYourFirstApiImg/clip_image011.jpg" alt="img"></a></p>
+<ol start="3">
+<li>In “__PackageDefinition” worksheet, key in the values as shown below for the basic settings.  These settings define the package name as alchemydemo.customer and the generated jar file will be called CustomerService.jar.   The Maven properties will be shown when the package is uploaded into a Maven Repository.</li>
+</ol>
+<table>
+<thead>
+<tr><th><strong>Item</strong></th><th><strong>Value</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>Configuration Type</td><td>Java Package</td></tr>
+<tr><td>Package Name</td><td>alchemydemo.customer</td></tr>
+<tr><td>Jar name</td><td>CustomerService</td></tr>
+<tr><td>Maven Group ID</td><td>alchemydemo</td></tr>
+<tr><td>Maven Artifact ID</td><td>Customers</td></tr>
+<tr><td>Maven Version</td><td>1.0.0</td></tr>
+</tbody>
+</table>
+<ol start="4">
+<li>Next, we will need to define the Java Class included in this package, which is the one we have setup earlier.</li>
+</ol>
+<table>
+<thead>
+<tr><th><strong>Class Definition Sheets</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>##ClassDefinition</td></tr>
+</tbody>
+</table>
+<ol start="5">
+<li>As mentioned in Java Class Definition, the getCustomerByName method returns an object called Customer. We now define the structure of this Customer object in the Object Definition section. There are 5 fields in the customer table. Each column represents a property in the customer object. Define the Customer object properties in the Object Definition Section as shown below:</li>
+</ol>
+<table>
+<thead>
+<tr><th><strong>Object Name</strong></th><th><strong>Property Name</strong></th><th><strong>Property Type</strong></th><th><strong>Property Class</strong></th><th><strong>Date Format</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>Customer</td><td>name</td><td>Basic Data</td><td>String</td><td></td></tr>
+<tr><td>Customer</td><td>level</td><td>Basic Data</td><td>Integer</td><td></td></tr>
+<tr><td>Customer</td><td>dob</td><td>Basic Data</td><td>Date</td><td>YYYY-MM-DD</td></tr>
+<tr><td>Customer</td><td>gender</td><td>Basic Data</td><td>String</td><td></td></tr>
+<tr><td>Customer</td><td>telephone</td><td>Basic Data</td><td>String</td><td></td></tr>
+</tbody>
+</table>
+<ol start="6">
+<li>Done! All configuration for this function has been completed.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="preview-and-compile-your-program"></a><a href="#preview-and-compile-your-program" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Preview and Compile Your Program</h2>
+<ol>
+<li>Now all formula and settings have been defined. We shall preview the API in AlchemyJ Studio. Go to AlchemyJ toolbar, click <strong>Run Function Point</strong> and select Get Customer to test the Get Customer function point in AlchemyJ Studio.</li>
+</ol>
+<p><img src="WriteYourFirstApiImg/image-20191225051321315.png" alt="image-20191225051321315"></p>
+<p>The result can be found in B4:F4.  The model works as expected.</p>
+<p><a href="WriteYourFirstApiImg/clip_image014.png"><img src="WriteYourFirstApiImg/clip_image014.png" alt="image-20191225051647573"></a></p>
+<ol start="2">
+<li><p>After we have test the API in AlchemyJ Studio, it is time to compile the model into Java code. Go to AlchemyJ toolbar, click <strong>Build Project</strong>.</p>
+<p>If you want AlchemyJ to generate the Jar package, check the <strong>Compile the project into a package</strong> checkbox.  Otherwise, leave it unchecked. AlchemyJ will generate the Java project only.</p>
+<p><img src="WriteYourFirstApiImg/clip_image015.png" alt="img"></p>
+<p>Click Build to start building the project. After AlchemyJ validates and analyse the workbook, AlchemyJ Compiler will start compiling the workbook.</p></li>
+</ol>
+<p><img src="WriteYourFirstApiImg/clip_image017.jpg" alt="img"></p>
+<ol start="3">
+<li>When compilation finishes, you shall see a java project has been generated. The default output folder is the Build folder in the folder that the workbook is in.  As shown in the below screen shot, a java class called  CustomerService has been created. Now you have got the Get Customer API in Java Language!</li>
+</ol>
+<p><img src="WriteYourFirstApiImg/clip_image019.jpg" alt="img"></p>
+<ol start="4">
+<li>To use this generated package, you need import the package to your existing Java Project. Refer to <a href="../../SamplesNTutorials/RecipeBook/IntegratingWithYourExistingCode">Using AlchemyJ Java API in a Java project</a> to learn how to use the generated Java package in a Java project.</li>
+</ol>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/Development/AlchemyjWorkbook/Introduction"><span class="arrow-prev">← </span><span>Introduction</span></a><a class="docs-next button" href="/docs/Development/AlchemyjWorkbook/AlchemyjStudio"><span class="function-name-prevnext">AlchemyJ Studio</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#before-we-start">Before we start</a></li><li><a href="#create-a-alchemyj-workbook">Create a AlchemyJ Workbook</a></li><li><a href="#define-a-business-logic-sheet">Define a Business Logic Sheet</a></li><li><a href="#define-java-class-parameter">Define Java Class Parameter</a></li><li><a href="#define-java-package-parameter">Define Java Package Parameter</a></li><li><a href="#preview-and-compile-your-program">Preview and Compile Your Program</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap" id="site_map"><table align="center" border="0"><tbody><tr><td align="left"><span height="46px"><a href="mailto:enquiry@alchemyj.com" id="emailUs">Email Us</a>    <a href="tel:+852 3162 6500" id="callUs">Call Us</a></span></td><td align="right"><span height="46px" id="copyright">Copyright © 2020 <a href="http://www.axisoft.com" target="_blank" data-content="http://www.axisoft.com" data-type="external" rel="noopener noreferrer" id="copyrightLink"> Axisoft (Asia Placific) Limited</a> All Rights Reserved.</span></td></tr></tbody></table></section></footer></div></body></html>
