@@ -98,7 +98,7 @@ AlchemyjClassContextHolder by setDataSource.</li>
         objectMapper.setTimeZone(TimeZone.getDefault());    
         acch.setObjectMapper(objectMapper);
         
-        acch.initByBasePackageName(<span class="hljs-string">"myproject,stockorder"</span>);
+        acch.initByBasePackageName(<span class="hljs-string">"myproject.stockorder"</span>);
     
     } <span class="hljs-keyword">catch</span> (Exception e) {
         log.error(<span class="hljs-string">"Could not initialize AlchemyJ class context holder."</span>, e);
