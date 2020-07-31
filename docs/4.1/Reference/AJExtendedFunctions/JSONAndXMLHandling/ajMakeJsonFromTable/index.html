@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>ajMakeJsonFromTable · AlchemyJ</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="# ajMakeJsonFromTable function"/><meta name="docsearch:version" content="4.1"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="ajMakeJsonFromTable · AlchemyJ"/><meta property="og:type" content="website"/><meta property="og:url" content="//"/><meta property="og:description" content="# ajMakeJsonFromTable function"/><meta property="og:image" content="/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="/css/atom-one-dark-reasonable.css"/><script src="/js/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="https://www.alchemyj.io" id="siteSubject1" target="_self"><span id="siteSubject2">Alchemy</span><span id="siteSubject3">J</span></a><span id="siteSubject4"> by</span><span> </span><a href="http://www.axisoft.com" rel="noopener noreferrer" data-type="external" data-content="http://www.axisoft.com" id="siteSubject5" target="_blank">Axisoft</a><a href="/versions"><h3>4.1</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"></ul></nav></div></header></div></div><div class="navPusher singleRowMobileNav"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="ajmakejsonfromtable-function"></a><a href="#ajmakejsonfromtable-function" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ajMakeJsonFromTable function</h1>
+<h2><a class="anchor" aria-hidden="true" id="description"></a><a href="#description" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Description</h2>
+<p>The ajMakeJsonFromTable function returns a JSON string of a single table.</p>
+<p>In some cases, we want to create a JSON string that contains a name with a value which is a JSON array as shown below.</p>
+<pre><code class="hljs">{
+    <span class="hljs-attr">"object"</span>:[
+
+        {<span class="hljs-attr">"array1"</span>:<span class="hljs-string">"value1"</span>},
+
+        {<span class="hljs-attr">"array2"</span>:<span class="hljs-string">"value2"</span>},
+
+        {<span class="hljs-attr">"array3"</span>:<span class="hljs-string">"value3"</span>}
+
+    ]
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="syntax"></a><a href="#syntax" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Syntax</h2>
+<p>ajMakeJsonFromTable(header, data, [data_name], [data_type], [exclude_column])</p>
+<table>
+<thead>
+<tr><th><strong>Argument Name</strong></th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>header  <br/>(required)</td><td>The range of cells  to be set as the name of the JSON name-value pair. It can only be selected  horizontally.  <br/><br/></td></tr>
+<tr><td>data  <br/>(required)</td><td>The range of cells  to be set as the value of the JSON name-value pair. It can only be selected  horizontally.  <br/><br/></td></tr>
+<tr><td>data_name  <br/>(optional)</td><td>Specify the name of the JSON name-value pair. If you do not specify anything, the  default value will always be &quot;data&quot;.  <br/><br/></td></tr>
+<tr><td>data_type  <br/>(optional)</td><td>Specify the data type of the fields (‘Header’) in the  format below. For the list of data types, please refer to the data type  supported in AlchemyJ. The fields that do not exist will be ignored.  <br/><br/>&lt;field_name&gt;-##-&lt;data_type&gt;-||-&lt;field_name&gt;-##-&lt;data_type&gt;-||-...  <br/><br/>Where,  <br/><br/>-||- denotes AlchemyJ parameter separator.  <br/><br/>-##- denotes AlchemyJ parameter type separator.  <br/><br/>For example, ID-##-number-||-Name-##-string  <br/><br/>Please take note that both separator symbols can be  configured in %%AppConfig worksheet.  <br/><br/>If you do not specify anything, the default data type will follow  the cell data type.  <br/><br/></td></tr>
+<tr><td>exclude_column  <br/>(optional)</td><td>Specify the fields to be excluded from the result. The fields  that do not exist will be ignored.  <br/><br/>&lt;field_name&gt;-||-&lt;field_name&gt;-||-...  <br/><br/>Where,  <br/><br/>-||- denotes AlchemyJ parameter separator.  <br/><br/>For example, ID-||-Last Name  <br/><br/>Please take note that the parameter separator symbols can be  configured in %%AppConfig worksheet.  <br/><br/>If you do not specify anything, no fields will be excluded.  <br/><br/></td></tr>
+</tbody>
+</table>
+<p>The function will return:</p>
+<p>1) Content type: JSON array</p>
+<p>2) Method: Within a cell / row cell array</p>
+<h2><a class="anchor" aria-hidden="true" id="example"></a><a href="#example" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example</h2>
+<p>As you can see from the example below, the JSON array is defined with a list of names from cell A1:C1 and the array value is defined in A2:C4, where A2:C2, A3:C3 and A4:C4 are the 3 sets of the JSON string in the array.</p>
+<p><img src="ajMakeJsonFromTableImg/image1.png" alt=""></p>
+<p>If the JSON string is too large, the return value can be specified in a row cell array.</p>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#description">Description</a></li><li><a href="#syntax">Syntax</a></li><li><a href="#example">Example</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap" id="site_map"><table align="center" border="0"><tbody><tr><td align="right" id="copyrightTd"><span height="46px" id="copyright">Copyright © 2019 <a href="http://www.axisoft.com" target="_blank" data-content="http://www.axisoft.com" data-type="external" rel="noopener noreferrer" id="copyrightLink"> Axisoft.</a> All Rights Reserved.</span></td></tr></tbody></table></section></footer></div></body></html>

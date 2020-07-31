@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>DB Schema Worksheet · AlchemyJ</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="# DB Schema Worksheet"/><meta name="docsearch:version" content="4.1"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="DB Schema Worksheet · AlchemyJ"/><meta property="og:type" content="website"/><meta property="og:url" content="//"/><meta property="og:description" content="# DB Schema Worksheet"/><meta property="og:image" content="/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="/css/atom-one-dark-reasonable.css"/><script src="/js/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="https://www.alchemyj.io" id="siteSubject1" target="_self"><span id="siteSubject2">Alchemy</span><span id="siteSubject3">J</span></a><span id="siteSubject4"> by</span><span> </span><a href="http://www.axisoft.com" rel="noopener noreferrer" data-type="external" data-content="http://www.axisoft.com" id="siteSubject5" target="_blank">Axisoft</a><a href="/versions"><h3>4.1</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"></ul></nav></div></header></div></div><div class="navPusher singleRowMobileNav"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="db-schema-worksheet"></a><a href="#db-schema-worksheet" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>DB Schema Worksheet</h1>
+<h2><a class="anchor" aria-hidden="true" id="introduction"></a><a href="#introduction" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Introduction</h2>
+<p>DB Schema is an AlchemyJ Component which links database tables and data dictionary in an AlchemyJ workbook.</p>
+<p><a href="DbSchemaWorksheetImg/image-01.png"><img src="DbSchemaWorksheetImg/image-01.png" alt="image-01"></a></p>
+<p>To add the DB Schema worksheet, go to the AlchemyJ toolbar, click Add Component, select DB Schema.</p>
+<p>Input the name of the table you want to retrieve from your database. The table information will be loaded to the worksheet automatically.  Before using this component, the database connection must be set up in the Properties dialog box. Refer to <a href="../../RecipeBook/DatabaseOperation/AccessingDatabase">Accessing database Recipe</a> for an example.</p>
+<p><a href="DbSchemaWorksheetImg/image-02.png"><img src="DbSchemaWorksheetImg/image-02.png" alt="image-02"></a></p>
+<p>One DB Schema worksheet can contain multiple table schemas. To add a new table schema into an existing DB Schema worksheet, simply activate the DB Schema worksheet you would like to add, go to AlchemyJ toolbar, click Add Component, select DB Schema. AlchemyJ Studio will detect that the current worksheet is a DB Schema worksheet, then append the schema for a new table and will not create a new sheet.</p>
+<p>DB Schema component can work with the following AlchemyJ Extended Functions.</p>
+<ul>
+<li><a href="../../Reference/AJExtendedFunctions/DatabaseOperation/ajCountRec">ajCountRec</a></li>
+<li><a href="../../Reference/AJExtendedFunctions/DatabaseOperation/ajCreateRec">ajCreateRec</a></li>
+<li><a href="../../Reference/AJExtendedFunctions/DatabaseOperation/ajDeleteRec">ajDeleteRec</a></li>
+<li><a href="../../Reference/AJExtendedFunctions/DatabaseOperation/ajDownloadLob">ajDownloadLob</a></li>
+<li><a href="../../Reference/AJExtendedFunctions/DatabaseOperation/ajMergeRec">ajMergeRec</a></li>
+<li><a href="../../Reference/AJExtendedFunctions/DatabaseOperation/ajReadRec">ajReadRec</a></li>
+<li><a href="../../Reference/AJExtendedFunctions/DatabaseOperation/ajUpdateRec">ajUpdateRec</a></li>
+<li><a href="../../Reference/AJExtendedFunctions/DatabaseOperation/ajUploadLob">ajUploadLob</a></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="configuration"></a><a href="#configuration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configuration</h2>
+<p>All columns are retrieved from the specified table except <strong>Data Dictionary Address</strong> and <strong>Data Name</strong> and <strong>Case Insensitive</strong>. These columns should be supplemented by the user.</p>
+<table>
+<thead>
+<tr><th>Configuration Item</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>Data Source ID</td><td>String. The key name of Data Source.</td></tr>
+<tr><td>Table Owner</td><td>String. The user name of the owner of the table.</td></tr>
+<tr><td>Table Name</td><td>String. The name of the table.</td></tr>
+<tr><td>Column ID</td><td>Integer. The unique ID of the column.</td></tr>
+<tr><td>Column Display Name</td><td>String. The column name for display.</td></tr>
+<tr><td>Column Name</td><td>String. The name of the column.</td></tr>
+<tr><td>Data Type</td><td>String. Data Type of the column, it will be different depending on the database type. E.g. VARCHAR2, DATE, NUMBER, TIMESTAMP, FLOAT and so on.</td></tr>
+<tr><td>Data Length</td><td>Integer. The length of the data.</td></tr>
+<tr><td>Data Precision</td><td>Integer. The precision of the data.</td></tr>
+<tr><td>Data Scale</td><td>Integer. The scale of the data.</td></tr>
+<tr><td>Mandatory</td><td>It can be Y or empty. Y means the value must not be null.</td></tr>
+<tr><td>Key Order</td><td>Integer. It could be empty or an integer. It specifies the order of the key column among other key columns. 1 is meaning this is the first key column.</td></tr>
+<tr><td>Default Value Type</td><td>The type of default value when the value of the field is not provided.<br />GUID - Assign a GUID.<br /> SQL - Calculate the default value by a SQL statement. <br /> AUTO_NUM - Assign a sequence number.</td></tr>
+<tr><td>In Out</td><td>When the column has defult value, <br/>For Oracle and MSSQL database table, it will be set as InOut.<br/>For MySQL database table, it will be set as Out. <br/>If the column does not have default value, it will be set as empty.</td></tr>
+<tr><td>Mapped Data Type</td><td>String. Base on the column 'Data Type' value defined in different database, auto-fill in the unified data type definition in AlchemyJ.</td></tr>
+<tr><td>Data Dictionary Address</td><td>The address of the Data Dictionary range in a Data Dictionary worksheet. It is recommended to use <a href="../../Reference/AJExtendedFunctions/CommonFunction/ajGetAddress">ajGetAddress</a> so that the address can be updated automatically.</td></tr>
+<tr><td>Data Name</td><td>The Data Name in Data Dictionary which this column maps to.</td></tr>
+<tr><td>Case Insensitive</td><td>To specify whether this field of table is case sensitive when filtering or searching the DB records. <br/>Yes - Case Insensitive.<br/>No - Case Sensitive, Default is No.</td></tr>
+</tbody>
+</table>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#introduction">Introduction</a></li><li><a href="#configuration">Configuration</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap" id="site_map"><table align="center" border="0"><tbody><tr><td align="right" id="copyrightTd"><span height="46px" id="copyright">Copyright © 2019 <a href="http://www.axisoft.com" target="_blank" data-content="http://www.axisoft.com" data-type="external" rel="noopener noreferrer" id="copyrightLink"> Axisoft.</a> All Rights Reserved.</span></td></tr></tbody></table></section></footer></div></body></html>
