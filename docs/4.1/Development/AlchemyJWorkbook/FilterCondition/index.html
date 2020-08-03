@@ -81,7 +81,7 @@
 <tr><td>And / Or<br />(optional)</td><td>If the input is AND, it will need to pass Search Criteria 1 and Search Criteria 2. <br/> If the input is OR, it will pass if it passes either Search Criteria 1 or Search Criteria 2.</td></tr>
 <tr><td>Operator 2<br />(optional)</td><td>The following operators are supported:<br /><ul><li>eq - equal to</li> <li>neq - not equal to</li><li>lt - less than</li><li>lte - less than or equal to</li><li>gt - greater than</li><li>gte - greater than or equal to</li><li>isnull - is null</li><li>isnotnull - is not null</li><li>contains - contains</li><li>doesnotcontain - does not contain</li><li>startswith - starts with</li><li>doesnotstartwith - does not start with</li><li>endswith - ends with</li><li>doesnotendwith - does not end with</li><li>isempty - is empty</li><li>isnotempty- is not empty</li></ul><br /></td></tr>
 <tr><td>Search Criteria<br />(optional)</td><td>This is to state the search criteria value.</td></tr>
-<tr><td>Or Group<br />(optional)</td><td>This is to group the list of data name filter conditions together. <br/>If <strong>Or</strong> is keyed, the filter condictions will be constructed by Or operation.</td></tr>
+<tr><td>Or Group<br />(optional)</td><td>This is to group the list of data name filter conditions together. <br/>If <strong>Or</strong> is keyed, the filter conditions will be constructed by Or operation.</td></tr>
 </tbody>
 </table>
 <p>Notes: An error will occur if the range value is not in the format of the corresponding filter type. <br />For filter_type = 1, if the operator is available but operand is empty, it will be treated as '' (i.e. empty string).</p>
@@ -93,7 +93,7 @@
 <p>Fill in the Filter Condition details accordingly.</p>
 <p>When referencing the Filter Condition table, do remember to include the column headers as part of the cell range as shown in Cell B13 for the formula to work.</p>
 <h2><a class="anchor" aria-hidden="true" id="column-definition-filter-type-2"></a><a href="#column-definition-filter-type-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Column definition (Filter Type 2)</h2>
-<p>The range defines a filter condition similar to the format used in MS Query. Click Insert Snippet\Filter Condition (Filter Type 2) to add the preset required format. Two columns are used to define one filter condition. So the number of columns should always be a multiple of 2. E.g. 2, 4, 6. The first column defines the operator and the second consider defines the value. For example, <strong>&lt; 10</strong>.</p>
+<p>The range defines a filter condition similar to the format used in MS Query. Click Insert Snippet\Filter Condition (Filter Type 2) to add the preset required format. Two columns are used to define one filter condition. So the number of columns should always be a multiple of 2. e.g. 2, 4, 6. The first column defines the operator and the second consider defines the value. For example, <strong>&lt; 10</strong>.</p>
 <table>
 <thead>
 <tr><th>Column Name</th><th>Description</th></tr>

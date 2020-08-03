@@ -101,7 +101,7 @@
 <p>c. The login resource returns a successfully message. This mean we have already logged in. Now go back to '/endpointGroup/resource1' tab in Postman, click 'Send' button to send the call again, it is expected that the endpoint call would be successful and the proper result would be returned.</p>
 <p><a href="AuthenticationForRESTAPIImg/image-11.png"><img src="AuthenticationForRESTAPIImg/image-11.png" alt="image-11"></a></p>
 <h3><a class="anchor" aria-hidden="true" id="case-2---session-based-security-with-ldap-authentication-and-function-entitlement"></a><a href="#case-2---session-based-security-with-ldap-authentication-and-function-entitlement" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Case 2 - Session-based security with LDAP authentication and function entitlement</h3>
-<p>In the example, we will configrure the API so that only authenticated users which has specified authority may access the API. The user authentication information will be kept in a session.</p>
+<p>In the example, we will configure the API so that only authenticated users which has specified authority may access the API. The user authentication information will be kept in a session.</p>
 <p>Compare this with case 1, this case has additional checks on the authority a user has. We can build this model based on the model we built in case 1.</p>
 <h4><a class="anchor" aria-hidden="true" id="1-case-preparation-1"></a><a href="#1-case-preparation-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Case Preparation</h4>
 <p>1.1. We will retrieve user status and the authorities a user has from a database. Thus, we need to create two tables, sec_userdetail and sec_userdetail_authority. You can pick any table names you want. The below screenshots shows the two tables we created in a MySQL database.</p>
@@ -113,7 +113,7 @@
 <p>1 - expired account which means the user account is expired.</p>
 <p>2 - locked account which means the user account is locked.</p>
 <p>3 - expired token which means the user token is expired.</p>
-<p>1.3. Insert user authority records into table 'sec_userdetail_authority'. Here, 'AM', 'BO', 'MO', 'RM' and 'SM' represents some authority names. You can use any authority name you want. Each record in the table represents oneuser name and authority association. One user may have multiple authorities.</p>
+<p>1.3. Insert user authority records into table 'sec_userdetail_authority'. Here, 'AM', 'BO', 'MO', 'RM' and 'SM' represents some authority names. You can use any authority name you want. Each record in the table represents one user name and authority association. One user may have multiple authorities.</p>
 <p><a href="AuthenticationForRESTAPIImg/image-14.png"><img src="AuthenticationForRESTAPIImg/image-14.png" alt="image-14"></a></p>
 <p>1.4. Copy the AlchemyJ workbook generated in case 1 as case 2 AlchemyJ workbook.</p>
 <p>1.5. In ##ExternalResources worksheet, configure the data source <strong>primary</strong> connection information in <strong>Data Source Configuration</strong> section. Note that the 'Password' value is encrypted via 'Tools\Encrypt Passwords' button in AlchemyJ ribbon.</p>
@@ -125,7 +125,7 @@
 <p><a href="AuthenticationForRESTAPIImg/image-15.png"><img src="AuthenticationForRESTAPIImg/image-15.png" alt="image-15"></a></p>
 <p>2.3 In <strong>Database User Management</strong> section, revise the SQL statement in <strong>User state SQL query</strong> and <strong>Authority SQL query</strong> parameter value as below.</p>
 <p><strong>User state SQL query</strong></p>
-<pre><code class="hljs css language-sql"><span class="hljs-keyword">SELECT</span> USERSTAUS <span class="hljs-keyword">as</span> USER_STATE <span class="hljs-keyword">FROM</span> SEC_USERDETAIL <span class="hljs-keyword">WHERE</span> USERNAME=:USERNAME
+<pre><code class="hljs css language-sql"><span class="hljs-keyword">SELECT</span> USERSTATUS <span class="hljs-keyword">as</span> USER_STATE <span class="hljs-keyword">FROM</span> SEC_USERDETAIL <span class="hljs-keyword">WHERE</span> USERNAME=:USERNAME
 </code></pre>
 <p><strong>Authority SQL query</strong></p>
 <pre><code class="hljs css language-SQL"><span class="hljs-keyword">SELECT</span> AUTHORITY <span class="hljs-keyword">FROM</span> SEC_USERDETAIL_AUTHORITIES <span class="hljs-keyword">WHERE</span> USERNAME=:USERNAME
@@ -172,7 +172,7 @@
 <p>4.1. Click <strong>Generate API</strong> button in AlchemyJ ribbon to trigger REST API generation and execution.</p>
 <p>4.2. Wait until 'MyRESTAPI' is generated and started.</p>
 <p>4.3. Let's try making following calls in Postman to check if REST API authentication with JWT works.</p>
-<p>a. In Postman, create a request to /endpointGroup/resource1. The call should fail because the request dose not contain any JWT token in the header.</p>
+<p>a. In Postman, create a request to /endpointGroup/resource1. The call should fail because the request does not contain any JWT token in the header.</p>
 <p><a href="AuthenticationForRESTAPIImg/image-30.png"><img src="AuthenticationForRESTAPIImg/image-30.png" alt="image-30"></a></p>
 <p>b. The call failed as expected. To login and receive a JWT token, make a new request to '/login', and provide the correct domain user name and password in header fields. After authentication passed, a 'UserToken' field can be found in response 'Headers'.</p>
 <p><a href="AuthenticationForRESTAPIImg/image-31.png"><img src="AuthenticationForRESTAPIImg/image-31.png" alt="image-31"></a></p>

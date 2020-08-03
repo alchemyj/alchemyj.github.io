@@ -111,7 +111,7 @@
 <tr><td>String Value List</td><td>Possible values of this data item.<br/><br/></td></tr>
 <tr><td>Pattern</td><td>The string pattern its value should follow. It is a regular expression.<br/><br/></td></tr>
 <tr><td>Format Type</td><td>Predefined format validation. It can be Email Address, JSON, File Path, URL, Hong Kong ID, China ID, Singapore NRIC.<br/><br/></td></tr>
-<tr><td>Case Conversion</td><td>Convert the case of the value to Lower, Upper Upper, First Letter.<br/><br/></td></tr>
+<tr><td>Case Conversion</td><td>Convert the case of the value to Lower, Upper, Upper First Letter.<br/><br/></td></tr>
 </tbody>
 </table>
 <p>Properties of a <strong>Date</strong> data item.</p>
@@ -140,12 +140,12 @@
 <tr><td>Min File Size</td><td>Minimum file size check in MB. <br/>For example, 100 means 100MB, 1024 means 1GB.<br/><br/></td></tr>
 <tr><td>Max File Size</td><td>Maximum file size check in MB.<br/><br/></td></tr>
 <tr><td>File Name Pattern</td><td>Use regular expression to check whether the file name matches the defined pattern.<br/><br/></td></tr>
-<tr><td>Allowed File Extension</td><td>If this is not blank, only allow files with the defined file extension. It is case insensitive. Use comma as the separator. E.g, png, jpeg, docx<br/><br/></td></tr>
-<tr><td>Disallowed File Extension</td><td>Do not allow files with the defined extension. It is case insensitive. Use comma as the separator. E.g, png, jpeg, docx<br/><br/></td></tr>
+<tr><td>Allowed File Extension</td><td>If this is not blank, only allow files with the defined file extension. It is case insensitive. Use comma as the separator. e.g. png, jpeg, docx<br/><br/></td></tr>
+<tr><td>Disallowed File Extension</td><td>Do not allow files with the defined extension. It is case insensitive. Use comma as the separator. e.g. png, jpeg, docx<br/><br/></td></tr>
 <tr><td>Magic Number Check</td><td>TRUE - means the check of the allowed file extension and disallowed file extension will also check the file magic number. If the file type indicated by the magic number of the file is not the same as the file extension, the validation will fail.<br />False/empty - means do not check the magic number.<br /><br/>**A magic number is a number embedded at or near the beginning of a file that indicates its file format (i.e., the type of file it is). It is also sometimes referred to as a file signature.<br/><br/></td></tr>
 </tbody>
 </table>
-<p><strong>Note:</strong> Please note that the JavaScript version of data dictionary does not support the file data type. Such data items will be omitted in the generated JavaScript file. Avoid using formulas on a data disctionary worksheet as they will not be supported.</p>
+<p><strong>Note:</strong> Please note that the JavaScript version of data dictionary does not support the file data type. Such data items will be omitted in the generated JavaScript file. Avoid using formulas on a data dictionary worksheet as they will not be supported.</p>
 <h2><a class="anchor" aria-hidden="true" id="error-message-settings"></a><a href="#error-message-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Error Message Settings</h2>
 <p>The error message settings section defines the error message that will be returned by ajCheckDataItem. It can be changed as needed. It supports the following place holders:</p>
 <ul>

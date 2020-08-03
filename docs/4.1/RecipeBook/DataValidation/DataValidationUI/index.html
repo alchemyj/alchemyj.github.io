@@ -74,7 +74,7 @@
 <ol>
 <li><p>Refer to <a href="DataValidationBackend#setting-up-a-data-dictionary">Setting up a data dictionary</a> to set up the data dictionary component.</p></li>
 <li><p>Include the Data Dictionary Worksheet name in <a href="../../Development/AlchemyJWorkbook/JavaAPIClass#related-worksheets">Related Worksheets</a> section of <a href="../../Development/AlchemyJWorkbook/JavaAPIClass">Java API Class Worksheet</a>.</p></li>
-<li><p>Generate the API via AlchemyJ menu <strong>API &gt; Generate API</strong> to build the entire project or use <strong>API &gt; Generate API &gt; Generate Data Dictionary Script</strong> to generate the data dictionay scripts only.</p></li>
+<li><p>Generate the API via AlchemyJ menu <strong>API &gt; Generate API</strong> to build the entire project or use <strong>API &gt; Generate API &gt; Generate Data Dictionary Script</strong> to generate the data dictionary scripts only.</p></li>
 <li><p>All configuration details (except items with file data type) in the Data Dictionary component will be exported in JSON format and saved in datadict.repository.js in the output directory. Both ES5 and ES6 Language Standard are supported.</p>
 <p><a href="DataValidationUIImg/image-20200205155930547.png"><img src="DataValidationUIImg/image-20200205155930547.png" alt="image-20200205155930547"></a></p>
 <p><a href="DataValidationUIImg/image-20200205160408828.png"><img src="DataValidationUIImg/image-20200205160408828.png" alt="image-20200205160408828"></a></p></li>
@@ -88,7 +88,7 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"AlchemyJ/DataDictionary.repository.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
 <ol start="2">
-<li>Use datadict.process to validate the input values, below is some sample code to trigger the validation. Sample JS to process the validation to be included in the the submit button.</li>
+<li>Use datadict.process to validate the input values, below is some sample code to trigger the validation. Sample JS to process the validation to be included in the submit button.</li>
 </ol>
 <pre><code class="hljs">    <span class="hljs-comment">// Sample functions to process the validation</span>
     $(<span class="hljs-string">".submit"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{

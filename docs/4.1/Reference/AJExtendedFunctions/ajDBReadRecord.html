@@ -80,7 +80,7 @@
 <tr><td>table_schema<br />(optional)</td><td>Range / Array</td><td>The range that defines the DB Schema.</td></tr>
 <tr><td>transpose<br />(optional)</td><td>Boolean</td><td><p>If it equals FALSE, the return records will not be transposed.</p><p>If it equals TRUE, the returned records will be transposed from row to column.</p>The default value is FALSE.</td></tr>
 <tr><td>include_header<br />(optional)</td><td>Boolean</td><td><p>If it equals TRUE, the return result will include the column headers as the first row.  </p><p>If it equals FALSE, the return result will contain data only. </p><br />The default value is FALSE.</td></tr>
-<tr><td>data_source_id <br/> (optional)</td><td>String</td><td><p>The data source shall be used in this database operation. It shall be defined in ##ExternalResource worksheet.</p>The default value is &quot;primary&quot;.</td></tr>
+<tr><td>data_source_id <br/> (optional)</td><td>String</td><td><p>The data source shall be used in this database operation. It shall be defined in ##ExternalResources worksheet.</p>The default value is &quot;primary&quot;.</td></tr>
 <tr><td>convert_to_text<br /> (optional)</td><td>Boolean</td><td><p>If it equals TRUE, the return result will be converted to string values. </p><p>If it equals FALSE, the return result will preserve the original data type.</p>The default value is FALSE.</td></tr>
 <tr><td>run_condition <br/> (optional)</td><td>Boolean</td><td><p>The function will run when the value is TRUE. Otherwise, it will not run. </p>The default value is TRUE.</td></tr>
 <tr><td>run_by_function_point_only (optional)</td><td>Boolean</td><td><p>If it equals FALSE, the function can be executed through ‘Excel Calculation’ (can be either <strong>Automatic</strong> or <strong>Manual</strong>, <strong>Calculate Now</strong> or <strong>Calculate Sheet</strong>) or <strong>Preview Function Point</strong>. </p><p>If it equals TRUE, the function can be executed with <strong>Preview Function Point</strong> (AlchemyJ toolbar \ Preview Function Point) only.</p>The default value is TRUE.</td></tr>
@@ -108,7 +108,7 @@
 <p><a href="ajDBReadRecordImg/image-06.png"><img src="ajDBReadRecordImg/image-06.png" alt=""></a></p>
 <p>Click <a href="https://github.com/alchemyj/ajxf.github.io/raw/master/4.1/ajDBReadRecord.zip">here</a> to download the use case workbooks for further reference.</p>
 <h2><a class="anchor" aria-hidden="true" id="error-scenarios"></a><a href="#error-scenarios" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Error Scenarios</h2>
-<p>It will return #VALUE! when missing any required parameter or mismatch parameter type. Besides, system will also raise error for below sc   enario(s).</p>
+<p>It will return #VALUE! when missing any required parameter or mismatch parameter type. Besides, system will also raise error for below scenario(s).</p>
 <table>
 <thead>
 <tr><th>Error  Scenario</th></tr>
