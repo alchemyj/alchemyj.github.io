@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Java API Package Worksheet · AlchemyJ</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="# Java API Package Worksheet"/><meta name="docsearch:version" content="4.2"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Java API Package Worksheet · AlchemyJ"/><meta property="og:type" content="website"/><meta property="og:url" content="//"/><meta property="og:description" content="# Java API Package Worksheet"/><meta property="og:image" content="/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="/css/atom-one-dark-reasonable.css"/><script src="/js/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="https://www.alchemyj.io" id="siteSubject1" target="_self"><span id="siteSubject2">Alchemy</span><span id="siteSubject3">J</span></a><span id="siteSubject4"> by</span><span> </span><a href="http://www.axisoft.com" rel="noopener noreferrer" data-type="external" data-content="http://www.axisoft.com" id="siteSubject5" target="_blank">Axisoft</a><a href="/versions"><h3>4.2</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"></ul></nav></div></header></div></div><div class="navPusher singleRowMobileNav"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="java-api-package-worksheet"></a><a href="#java-api-package-worksheet" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Java API Package Worksheet</h1>
+<h2><a class="anchor" aria-hidden="true" id="introduction"></a><a href="#introduction" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Introduction</h2>
+<p>A Java API Package Worksheet describes how AlchemyJ Compiler should generate a package. It defines the name of the package, the classes it contains and properties for the unit test project.</p>
+<p>It contains the following sections:</p>
+<ul>
+<li><a href="#basic-settings">Basic Settings</a></li>
+<li><a href="#classes">Classes</a></li>
+<li><a href="#unit-test-settings">Unit Test Settings</a></li>
+<li><a href="#maven-dependency">Maven Dependency</a></li>
+<li><a href="#advance-settings">Advance Settings</a></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="basic-settings"></a><a href="#basic-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Basic Settings</h2>
+<p>Define the basic information of a Java Package.</p>
+<table>
+<thead>
+<tr><th><strong>Item</strong></th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>Package Name</td><td>Define the name of this Java Package. For example com.company.myfirstjavaproject.</td></tr>
+<tr><td>Jar name</td><td>If you want to generate a Jar file (Source Type is Jar). Define it here.</td></tr>
+<tr><td>Version</td><td>Version number of this Java Project. The user of this API may use the version number to specify which version of the API to import from a Maven Repository.</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="classes"></a><a href="#classes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Classes</h2>
+<p>It defines the Class Definition Sheet(s) name included in this Java Package.</p>
+<h2><a class="anchor" aria-hidden="true" id="unit-test-settings"></a><a href="#unit-test-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Unit Test Settings</h2>
+<p>This section defines the unit test database information and external resource path.</p>
+<p>Refer to <a href="../../TestingAndTroubleshooting/Testing/Introduction">Testing Tool</a> for test steps.</p>
+<table>
+<thead>
+<tr><th><strong>Properties</strong></th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>Database</td><td>These are 3 types of the database that you can select from:<br /><p>MsSql</p><p>Oracle</br><p>MSSQL</p></td></tr>
+<tr><td>Data source JDBC URL</td><td>JDBC URL for the JDBC connection used in the unit test  project.<br/><p>Oracle:  <br/> jdbc:oracle:thin:@[Host]:[Port]:[SID] </br> For example: <br/>jdbc:oracle:thin:@localhost:1521:testdb1</p><p>MySQL:  <br/> jdbc:mysql://[Host]:[Port]/[DB Name] </br>For example: <br/>jdbc:<a href="mysql://localhost:3306/testdb1">mysql://localhost:3306/testdb1</a></p> <p>MSSQL: <br/>jdbc:sqlserver://[serverName]:[portNumber];[property=value] </br>For example: <br/>jdbc:<a href="sqlserver://localhost:1433">sqlserver://localhost:1433</a>; databaseName=testdb1;</p></td></tr>
+<tr><td>Data source user name</td><td>User name of the  database connection</td></tr>
+<tr><td>Data source password</td><td>Password of the database user</td></tr>
+<tr><td>Resource path</td><td>Path of unit test  resource files. This folder path specifies where unit test data files should  be loaded.</td></tr>
+<tr><td>Resource date format</td><td>The date format for date conversion. Default is yyyy-MM-dd HH:mm:ss</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="maven-dependency"></a><a href="#maven-dependency" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Maven Dependency</h2>
+<p>If your model use ajCallFunction to call other Java packages, you should define them in Maven Dependency section.  When AlchemyJ generates the API, it will include the related packages into the project.  Each row in the table refers to one package.</p>
+<table>
+<thead>
+<tr><th><strong>Item</strong></th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>Maven Group ID</td><td>Define a Group ID for the dependent package. It should follow Java's package name rules. You can use the same value as the package name.</td></tr>
+<tr><td>Maven Artifact ID</td><td>Define a unique Artifact ID for the depended project. The Group ID and Artifact ID together should uniquely identify this project across all projects.</td></tr>
+<tr><td>Maven Version</td><td>Version number of the dependent Java Project. The user of this API can use the version number to specify which version of the API to import from a Maven Repository.</td></tr>
+<tr><td>Scope</td><td><p>compile -  The dependency is required for compilation and execution. </p><p>runtime - The dependency is not required for compilation but required for execution. </p><p>provided - The dependency will be provided by the application server.</p> <p>Default is compile.</p></td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="advance-settings"></a><a href="#advance-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Advance Settings</h2>
+<table>
+<thead>
+<tr><th><strong>Item</strong></th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>Maven Group ID</td><td>Define a Group ID for this package. It should follow Java's package name rules. You can use the same value as the package name.</td></tr>
+<tr><td>Maven Artifact ID</td><td>Define a unique Artifact ID for this project. The Group ID and Artifact ID together should uniquely identify this project across all projects.</td></tr>
+</tbody>
+</table>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#introduction">Introduction</a></li><li><a href="#basic-settings">Basic Settings</a></li><li><a href="#classes">Classes</a></li><li><a href="#unit-test-settings">Unit Test Settings</a></li><li><a href="#maven-dependency">Maven Dependency</a></li><li><a href="#advance-settings">Advance Settings</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap" id="site_map"><table align="center" border="0"><tbody><tr><td align="right" id="copyrightTd"><span height="46px" id="copyright">Copyright © 2019 <a href="http://www.axisoft.com" target="_blank" data-content="http://www.axisoft.com" data-type="external" rel="noopener noreferrer" id="copyrightLink"> Axisoft.</a> All Rights Reserved.</span></td></tr></tbody></table></section></footer></div></body></html>

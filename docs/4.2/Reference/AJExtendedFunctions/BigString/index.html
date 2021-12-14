@@ -1,0 +1,244 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Big String · AlchemyJ</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="# Big String functions"/><meta name="docsearch:version" content="4.2"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Big String · AlchemyJ"/><meta property="og:type" content="website"/><meta property="og:url" content="//"/><meta property="og:description" content="# Big String functions"/><meta property="og:image" content="/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="/css/atom-one-dark-reasonable.css"/><script src="/js/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="https://www.alchemyj.io" id="siteSubject1" target="_self"><span id="siteSubject2">Alchemy</span><span id="siteSubject3">J</span></a><span id="siteSubject4"> by</span><span> </span><a href="http://www.axisoft.com" rel="noopener noreferrer" data-type="external" data-content="http://www.axisoft.com" id="siteSubject5" target="_blank">Axisoft</a><a href="/versions"><h3>4.2</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"></ul></nav></div></header></div></div><div class="navPusher singleRowMobileNav"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="big-string-functions"></a><a href="#big-string-functions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Big String functions</h1>
+<h2><a class="anchor" aria-hidden="true" id="description"></a><a href="#description" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Description</h2>
+<p>A BigString is simply a bigarray of characters. It can be used instead of regular strings when input or output involving calling C (or another language), when very large strings are required, or for memory-mapping. AlchemyJ provides a serial of extended functions to handle big strings. These functions are named with prefix <strong>ajBigStr</strong>.</p>
+<h2><a class="anchor" aria-hidden="true" id="ajbigstrvalue"></a><a href="#ajbigstrvalue" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ajBigStrValue</h2>
+<p>Shows the value of passed memory ID.</p>
+<p><strong>Syntax</strong></p>
+<p>ajBigStrValue(memory_id, [run_condition], [run_by_function_point_only])</p>
+<table>
+<thead>
+<tr><th>Argument Name</th><th>Argument Type</th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>memory_id<br/>(required)</td><td>String</td><td>It is to specify the memory address id that keeps the BigString text. Normally, user should use ajBigStrSet function to get the memory id for BigString.</td></tr>
+<tr><td>run_condition <br/> (optional)</td><td>Boolean</td><td>The function will  run when the value is TRUE. Otherwise will not run. </p>If you do not specify anything, the default  value will always be TRUE.<br/><br/></td></tr>
+<tr><td>run_by_function_point_only  <br/>(optional)</td><td>Boolean</td><td>If it equals FALSE, the function can be executed through ‘Excel Calculation’ (can be either <strong>Automatic</strong> or <strong>Manual</strong>, <strong>Calculate Now</strong> or <strong>Calculate Sheet</strong>) or <strong>Preview Function Point</strong>. </p><p>If it equals TRUE, the function can be executed with <strong>Preview Function Point</strong> (AlchemyJ toolbar \ Preview Function Point) only.</p>If you do not specify anything, the default value will always be TRUE. <br/><br/></td></tr>
+</tbody>
+</table>
+<p>The function will return:</p>
+<p>1) Content type: Big String</p>
+<p>2) Method: Within a cell</p>
+<h2><a class="anchor" aria-hidden="true" id="ajbigstrleft"></a><a href="#ajbigstrleft" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ajBigStrLeft</h2>
+<p>Returns the specified number of characters from the start of BigString text.</p>
+<p><strong>Syntax</strong></p>
+<p>ajBigStrLeft(memory_id, [num_chars], [run_condition], [run_by_function_point_only])</p>
+<table>
+<thead>
+<tr><th>Argument Name</th><th>Argument Type</th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>memory_id<br/>(required)</td><td>String</td><td>It is to specify the memory address id that keeps the BigString text. Normally, user should use ajBigStrSet function to get the memory id for BigString.</td></tr>
+<tr><td>num_chars<br/>(optional)</td><td>Long</td><td>It specifies how many characters you want LEFT to extract. </p>If you do not specify anything, the default  value will always be 1.<br/><br/></td></tr>
+<tr><td>run_condition <br/> (optional)</td><td>Boolean</td><td>The function will  run when the value is TRUE. Otherwise will not run. </p>If you do not specify anything, the default  value will always be TRUE.<br/><br/></td></tr>
+<tr><td>run_by_function_point_only  <br/>(optional)</td><td>Boolean</td><td>If it equals FALSE, the function can be executed through ‘Excel Calculation’ (can be either <strong>Automatic</strong> or <strong>Manual</strong>, <strong>Calculate Now</strong> or <strong>Calculate Sheet</strong>) or <strong>Preview Function Point</strong>. </p><p>If it equals TRUE, the function can be executed with <strong>Preview Function Point</strong> (AlchemyJ toolbar \ Preview Function Point) only.</p>If you do not specify anything, the default value will always be TRUE. <br/><br/></td></tr>
+</tbody>
+</table>
+<p>The function will return:</p>
+<p>1) Content type: Big String</p>
+<p>2) Method: Within a cell</p>
+<h2><a class="anchor" aria-hidden="true" id="ajbigstrlower"></a><a href="#ajbigstrlower" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ajBigStrLower</h2>
+<p>Converts all characters in BigString text to lowercase.</p>
+<p><strong>Syntax</strong></p>
+<p>ajBigStrLower(memory_id, [run_condition], [run_by_function_point_only])</p>
+<table>
+<thead>
+<tr><th>Argument Name</th><th><strong>Argument Type</strong></th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>memory_id<br/>(required)</td><td>String</td><td>It is to specify the memory address id that keeps the BigString text. Normally, user should use ajBigStrSet function to get the memory id for BigString.</td></tr>
+<tr><td>run_condition <br/> (optional)</td><td>Boolean</td><td>The function will  run when the value is TRUE. Otherwise will not run. </p>If you do not specify anything, the default  value will always be TRUE.<br/><br/></td></tr>
+<tr><td>run_by_function_point_only  <br/>(optional)</td><td>Boolean</td><td>If it equals FALSE, the function can be executed through ‘Excel Calculation’ (can be either <strong>Automatic</strong> or <strong>Manual</strong>, <strong>Calculate Now</strong> or <strong>Calculate Sheet</strong>) or <strong>Preview Function Point</strong>. </p><p>If it equals TRUE, the function can be executed with <strong>Preview Function Point</strong> (AlchemyJ toolbar \ Preview Function Point) only.</p>If you do not specify anything, the default value will always be TRUE. <br/><br/></td></tr>
+</tbody>
+</table>
+<p>The function will return:</p>
+<p>1) Content type: Big String</p>
+<p>2) Method: Within a cell</p>
+<h2><a class="anchor" aria-hidden="true" id="ajbigstrmid"></a><a href="#ajbigstrmid" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ajBigStrMid</h2>
+<p>Returns the characters from the middle of a BigString text, given a starting position and length.</p>
+<p><strong>Syntax</strong></p>
+<p>ajBigStrMid(memory_id, start_num, num_chars, [run_condition], [run_by_function_point_only])</p>
+<table>
+<thead>
+<tr><th>Argument Name</th><th>Argument Type</th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>memory_id<br/>(required)</td><td>String</td><td>It is to specify the memory address id that keeps the BigString text. Normally, user should use ajBigStrSet function to get the memory id for BigString.</td></tr>
+<tr><td>start_num<br/>(required)</td><td>Long</td><td>It is the position of the first character you want to extract.</td></tr>
+<tr><td>num_chars <br/> (required)</td><td>Long</td><td>It specifies how many characters to return from BigString text.</td></tr>
+<tr><td>run_condition <br/> (optional)</td><td>Boolean</td><td>The function will  run when the value is TRUE. Otherwise will not run. </p>If you do not specify anything, the default  value will always be TRUE.<br/><br/></td></tr>
+<tr><td>run_by_function_point_only  <br/>(optional)</td><td>Boolean</td><td>If it equals FALSE, the function can be executed through ‘Excel Calculation’ (can be either <strong>Automatic</strong> or <strong>Manual</strong>, <strong>Calculate Now</strong> or <strong>Calculate Sheet</strong>) or <strong>Preview Function Point</strong>. </p><p>If it equals TRUE, the function can be executed with <strong>Preview Function Point</strong> (AlchemyJ toolbar \ Preview Function Point) only.</p>If you do not specify anything, the default value will always be TRUE. <br/><br/></td></tr>
+</tbody>
+</table>
+<p>The function will return:</p>
+<p>1) Content type: Big String</p>
+<p>2) Method: Within a cell</p>
+<h2><a class="anchor" aria-hidden="true" id="ajbigstrproper"></a><a href="#ajbigstrproper" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ajBigStrProper</h2>
+<p>Converts the BigString text to proper case; the first letter in each word is uppercase, and all other letters to lowercase.</p>
+<p><strong>Syntax</strong></p>
+<p>ajBigStrProper(memory_id, [run_condition], [run_by_function_point_only])</p>
+<table>
+<thead>
+<tr><th>Argument Name</th><th><strong>Argument Type</strong></th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>memory_id <br/>(required)</td><td>String</td><td>It is to specify the memory address id that keeps the BigString text. Normally, user should use ajBigStrSet function to get the memory id for BigString.</td></tr>
+<tr><td>run_condition <br/> (optional)</td><td>Boolean</td><td>The function will  run when the value is TRUE. Otherwise will not run. </p>If you do not specify anything, the default  value will always be TRUE.<br/><br/></td></tr>
+<tr><td>run_by_function_point_only  <br/>(optional)</td><td>Boolean</td><td>If it equals FALSE, the function can be executed through ‘Excel Calculation’ (can be either <strong>Automatic</strong> or <strong>Manual</strong>, <strong>Calculate Now</strong> or <strong>Calculate Sheet</strong>) or <strong>Preview Function Point</strong>. </p><p>If it equals TRUE, the function can be executed with <strong>Preview Function Point</strong> (AlchemyJ toolbar \ Preview Function Point) only.</p>If you do not specify anything, the default value will always be TRUE. <br/><br/></td></tr>
+</tbody>
+</table>
+<p>The function will return:</p>
+<p>1) Content type: Big String</p>
+<p>2) Method: Within a cell</p>
+<h2><a class="anchor" aria-hidden="true" id="ajbigstrreplace"></a><a href="#ajbigstrreplace" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ajBigStrReplace</h2>
+<p>Replaces part of a BigString text with a different text string.</p>
+<p><strong>Syntax</strong></p>
+<p>ajBigStrReplace(old_memory_id, start_num, num_chars, new_memory_id, [run_condition], [run_by_function_point_only])</p>
+<table>
+<thead>
+<tr><th>Argument Name</th><th><strong>Argument Type</strong></th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>old_memory_id<br/>(required)</td><td>String</td><td>It is to specify the memory address id that keeps the BigString text. Normally, user should use ajBigStrSet function to get the memory id for BigString.</td></tr>
+<tr><td>start_num <br/>(required)</td><td>Long</td><td>It is the position of the character in old_memory_id that you want to replace with BigString text  defined using new_memory_id.</td></tr>
+<tr><td>num_chars<br/>(required)</td><td>Long</td><td>It is the number of characters in old_memory_id that you want to replace.</td></tr>
+<tr><td>new_memory_id<br/>(required)</td><td>String</td><td>It is the BigString text that will replace characters in old_memory_id.</td></tr>
+<tr><td>run_condition <br/> (optional)</td><td>Boolean</td><td>The function will  run when the value is TRUE. Otherwise will not run. </p>If you do not specify anything, the default  value will always be TRUE.<br/><br/></td></tr>
+<tr><td>run_by_function_point_only  <br/>(optional)</td><td>Boolean</td><td>If it equals FALSE, the function can be executed through ‘Excel Calculation’ (can be either <strong>Automatic</strong> or <strong>Manual</strong>, <strong>Calculate Now</strong> or <strong>Calculate Sheet</strong>) or <strong>Preview Function Point</strong>. </p><p>If it equals TRUE, the function can be executed with <strong>Preview Function Point</strong> (AlchemyJ toolbar \ Preview Function Point) only.</p>If you do not specify anything, the default value will always be TRUE. <br/><br/></td></tr>
+</tbody>
+</table>
+<p>The function will return:</p>
+<p>1) Content type: Big String</p>
+<p>2) Method: Within a cell</p>
+<h2><a class="anchor" aria-hidden="true" id="ajbigstrrept"></a><a href="#ajbigstrrept" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ajBigStrRept</h2>
+<p>Repeats BigString text a given number of times.</p>
+<p><strong>Syntax</strong></p>
+<p>ajBigStrRept(memory_id, number_times, [run_condition], [run_by_function_point_only])</p>
+<table>
+<thead>
+<tr><th>Argument Name</th><th><strong>Argument Type</strong></th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>memory_id<br/>(required)</td><td>String</td><td>It is to specify the memory address id that keeps the BigString text. Normally, user should use ajBigStrSet function to get the memory id for BigString.</td></tr>
+<tr><td>number_times<br/>(required)</td><td>Long</td><td>It is a positive number specifying the number of times to repeat BigString text.</td></tr>
+<tr><td>run_condition <br/> (optional)</td><td>Boolean</td><td>The function will  run when the value is TRUE. Otherwise will not run. </p>If you do not specify anything, the default  value will always be TRUE.<br/><br/></td></tr>
+<tr><td>run_by_function_point_only  <br/>(optional)</td><td>Boolean</td><td>If it equals FALSE, the function can be executed through ‘Excel Calculation’ (can be either <strong>Automatic</strong> or <strong>Manual</strong>, <strong>Calculate Now</strong> or <strong>Calculate Sheet</strong>) or <strong>Preview Function Point</strong>. </p><p>If it equals TRUE, the function can be executed with <strong>Preview Function Point</strong> (AlchemyJ toolbar \ Preview Function Point) only.</p>If you do not specify anything, the default value will always be TRUE. <br/><br/></td></tr>
+</tbody>
+</table>
+<p>The function will return:</p>
+<p>1) Content type: Big String</p>
+<p>2) Method: Within a cell</p>
+<h2><a class="anchor" aria-hidden="true" id="ajbigstrright"></a><a href="#ajbigstrright" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ajBigStrRight</h2>
+<p>Returns the specified number of characters from the end of BigString text.</p>
+<p><strong>Syntax</strong></p>
+<p>ajBigStrRight(memory_id, num_chars, [run_condition], [run_by_function_point_only])</p>
+<table>
+<thead>
+<tr><th>Argument Name</th><th><strong>Argument Type</strong></th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>memory_id <br/>(required)</td><td>String</td><td>It is to specify the memory address id that keeps the BigString text. Normally, user should use ajBigStrSet function to get the memory id for BigString.</td></tr>
+<tr><td>num_chars <br/> (optional)</td><td>Long</td><td>It specifies how many characters you want to extract from right.</td></tr>
+<tr><td>run_condition <br/> (optional)</td><td>Boolean</td><td>The function will  run when the value is TRUE. Otherwise will not run. </p>If you do not specify anything, the default  value will always be TRUE.<br/><br/></td></tr>
+<tr><td>run_by_function_point_only  <br/>(optional)</td><td>Boolean</td><td>If it equals FALSE, the function can be executed through ‘Excel Calculation’ (can be either <strong>Automatic</strong> or <strong>Manual</strong>, <strong>Calculate Now</strong> or <strong>Calculate Sheet</strong>) or <strong>Preview Function Point</strong>. </p><p>If it equals TRUE, the function can be executed with <strong>Preview Function Point</strong> (AlchemyJ toolbar \ Preview Function Point) only.</p>If you do not specify anything, the default value will always be TRUE. <br/><br/></td></tr>
+</tbody>
+</table>
+<p>The function will return:</p>
+<p>1) Content type: Big String</p>
+<p>2) Method: Within a cell</p>
+<h2><a class="anchor" aria-hidden="true" id="ajbigstrset"></a><a href="#ajbigstrset" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ajBigStrSet</h2>
+<p>Saves plain text to memory and returns the memory id.</p>
+<p><strong>Syntax</strong></p>
+<p>ajBigStrSet(text, [run_condition], [run_by_function_point_only])</p>
+<table>
+<thead>
+<tr><th>Argument Name</th><th><strong>Description</strong></th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>text <br/>(required)</td><td>Variant</td><td>It is to specify the text or text cell reference to be saved.</td></tr>
+<tr><td>run_condition <br/> (optional)</td><td>Boolean</td><td>The function will  run when the value is TRUE. Otherwise will not run. </p>If you do not specify anything, the default  value will always be TRUE.<br/><br/></td></tr>
+<tr><td>run_by_function_point_only  <br/>(optional)</td><td>Boolean</td><td>If it equals FALSE, the function can be executed through ‘Excel Calculation’ (can be either <strong>Automatic</strong> or <strong>Manual</strong>, <strong>Calculate Now</strong> or <strong>Calculate Sheet</strong>) or <strong>Preview Function Point</strong>. </p><p>If it equals TRUE, the function can be executed with <strong>Preview Function Point</strong> (AlchemyJ toolbar \ Preview Function Point) only.</p>If you do not specify anything, the default value will always be TRUE. <br/><br/></td></tr>
+</tbody>
+</table>
+<p>The function will return:</p>
+<p>1) Content type: Big String</p>
+<p>2) Method: Within a cell</p>
+<h2><a class="anchor" aria-hidden="true" id="ajbigstrsubstitute"></a><a href="#ajbigstrsubstitute" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ajBigStrSubstitute</h2>
+<p>Replaces existing text with new text in a BigString.</p>
+<p><strong>Syntax</strong></p>
+<p>ajBigStrSubstitute(memory_id, old_memory_id, new_memory_id, instance_num, [run_condition], [run_by_function_point_only])</p>
+<table>
+<thead>
+<tr><th>Argument Name</th><th><strong>Argument Type</strong></th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>memory_id <br/>(required)</td><td>String</td><td>It is to specify the memory address id that keeps the BigString text. Normally, user should use ajBigStrSet function to get the memory id for BigString.</td></tr>
+<tr><td>old_memory_id <br/>(required)</td><td>String</td><td>It is the memory id of the existing text you want to replace.</td></tr>
+<tr><td>new_memory_id <br/>(required)</td><td>String</td><td>It is the memory id of the next text you want to replace existing text with.</td></tr>
+<tr><td>instance_num <br/> (optional)</td><td>Long</td><td>Specifies which occurrence of existing text you want to replace.</td></tr>
+<tr><td>run_condition <br/> (optional)</td><td>Boolean</td><td>The function will  run when the value is TRUE. Otherwise will not run. </p>If you do not specify anything, the default  value will always be TRUE.<br/><br/></td></tr>
+<tr><td>run_by_function_point_only  <br/>(optional)</td><td>Boolean</td><td>If it equals FALSE, the function can be executed through ‘Excel Calculation’ (can be either <strong>Automatic</strong> or <strong>Manual</strong>, <strong>Calculate Now</strong> or <strong>Calculate Sheet</strong>) or <strong>Preview Function Point</strong>. </p><p>If it equals TRUE, the function can be executed with <strong>Preview Function Point</strong> (AlchemyJ toolbar \ Preview Function Point) only.</p>If you do not specify anything, the default value will always be TRUE. <br/><br/></td></tr>
+</tbody>
+</table>
+<p>The function will return:</p>
+<p>1) Content type: Big String</p>
+<p>2) Method: Within a cell</p>
+<h2><a class="anchor" aria-hidden="true" id="ajbigstrtextjoin"></a><a href="#ajbigstrtextjoin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ajBigStrTextJoin</h2>
+<p>Concatenates a list or range of BigString text using a delimiter.</p>
+<p><strong>Syntax</strong></p>
+<p>ajBigStrTextJoin(delimiter, ignore_empty, text, [run_condition], [run_by_function_point_only])</p>
+<table>
+<thead>
+<tr><th>Argument Name</th><th><strong>Argument Type</strong></th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>delimiter <br/>(required)</td><td>String</td><td>Character or string to insert between each text item.</td></tr>
+<tr><td>ignore_empty <br/>(required)</td><td>Boolean</td><td>It is a logical value, TRUE means ignoring empty cells. </p>If you do not specify anything, the default value will always be FALSE.<br/><br/></td></tr>
+<tr><td>text <br/>(required)</td><td>Range</td><td>It is a cell range that contains the texts to be joined.</td></tr>
+<tr><td>run_condition <br/> (optional)</td><td>Boolean</td><td>The function will  run when the value is TRUE. Otherwise will not run. </p>If you do not specify anything, the default value will always be TRUE.<br/><br/></td></tr>
+<tr><td>run_by_function_point_only  <br/>(optional)</td><td>Boolean</td><td>If it equals FALSE, the function can be executed through ‘Excel Calculation’ (can be either <strong>Automatic</strong> or <strong>Manual</strong>, <strong>Calculate Now</strong> or <strong>Calculate Sheet</strong>) or <strong>Preview Function Point</strong>. </p><p>If it equals TRUE, the function can be executed with <strong>Preview Function Point</strong> (AlchemyJ toolbar \ Preview Function Point) only.</p>If you do not specify anything, the default value will always be TRUE. <br/><br/></td></tr>
+</tbody>
+</table>
+<p>The function will return:</p>
+<p>1) Content type: Big String</p>
+<p>2) Method: Within a cell</p>
+<h2><a class="anchor" aria-hidden="true" id="ajbigstrtrim"></a><a href="#ajbigstrtrim" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ajBigStrTrim</h2>
+<p>Removes all spaces from a BigString text except for single spaces between words.</p>
+<p><strong>Syntax</strong></p>
+<p>ajBigStrTrim(memory_id, [run_condition], [run_by_function_point_only])</p>
+<table>
+<thead>
+<tr><th>Argument Name</th><th><strong>Argument Type</strong></th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>memory_id <br/>(required)</td><td>String</td><td>It is to specify the memory address id that keeps the BigString text. Normally, user should use ajBigStrSet function to get the memory id for BigString.</td></tr>
+<tr><td>run_condition <br/> (optional)</td><td>Boolean</td><td>The function will  run when the value is TRUE. Otherwise will not run. </p>If you do not specify anything, the default  value will always be TRUE.<br/><br/></td></tr>
+<tr><td>run_by_function_point_only  <br/>(optional)</td><td>Boolean</td><td>If it equals FALSE, the function can be executed through ‘Excel Calculation’ (can be either <strong>Automatic</strong> or <strong>Manual</strong>, <strong>Calculate Now</strong> or <strong>Calculate Sheet</strong>) or <strong>Preview Function Point</strong>. </p><p>If it equals TRUE, the function can be executed with <strong>Preview Function Point</strong> (AlchemyJ toolbar \ Preview Function Point) only.</p>If you do not specify anything, the default value will always be TRUE. <br/><br/></td></tr>
+</tbody>
+</table>
+<p>The function will return:</p>
+<p>1) Content type: Big String</p>
+<p>2) Method: Within a cell</p>
+<h2><a class="anchor" aria-hidden="true" id="ajbigstrupper"></a><a href="#ajbigstrupper" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ajBigStrUpper</h2>
+<p>Converts a BigString text to all uppercase letters.</p>
+<p><strong>Syntax</strong></p>
+<p>ajBigStrUpper(memory_id, [run_condition], [run_by_function_point_only])</p>
+<table>
+<thead>
+<tr><th>Argument Name</th><th><strong>Argument Type</strong></th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>memory_id<br/>(required)</td><td>String</td><td>It is to specify the memory address id that keeps the BigString text. Normally, user should use ajBigStrSet function to get the memory id for BigString.</td></tr>
+<tr><td>run_condition <br/> (optional)</td><td>Boolean</td><td>The function will  run when the value is TRUE. Otherwise will not run. </p>If you do not specify anything, the default  value will always be TRUE.<br/><br/></td></tr>
+<tr><td>run_by_function_point_only  <br/>(optional)</td><td>Boolean</td><td>If it equals FALSE, the function can be executed through ‘Excel Calculation’ (can be either <strong>Automatic</strong> or <strong>Manual</strong>, <strong>Calculate Now</strong> or <strong>Calculate Sheet</strong>) or <strong>Preview Function Point</strong>. </p><p>If it equals TRUE, the function can be executed with <strong>Preview Function Point</strong> (AlchemyJ toolbar \ Preview Function Point) only.</p>If you do not specify anything, the default value will always be TRUE. <br/><br/></td></tr>
+</tbody>
+</table>
+<p>The function will return:</p>
+<p>1) Content type: Big String</p>
+<p>2) Method: Within a cell</p>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#description">Description</a></li><li><a href="#ajbigstrvalue">ajBigStrValue</a></li><li><a href="#ajbigstrleft">ajBigStrLeft</a></li><li><a href="#ajbigstrlower">ajBigStrLower</a></li><li><a href="#ajbigstrmid">ajBigStrMid</a></li><li><a href="#ajbigstrproper">ajBigStrProper</a></li><li><a href="#ajbigstrreplace">ajBigStrReplace</a></li><li><a href="#ajbigstrrept">ajBigStrRept</a></li><li><a href="#ajbigstrright">ajBigStrRight</a></li><li><a href="#ajbigstrset">ajBigStrSet</a></li><li><a href="#ajbigstrsubstitute">ajBigStrSubstitute</a></li><li><a href="#ajbigstrtextjoin">ajBigStrTextJoin</a></li><li><a href="#ajbigstrtrim">ajBigStrTrim</a></li><li><a href="#ajbigstrupper">ajBigStrUpper</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap" id="site_map"><table align="center" border="0"><tbody><tr><td align="right" id="copyrightTd"><span height="46px" id="copyright">Copyright © 2019 <a href="http://www.axisoft.com" target="_blank" data-content="http://www.axisoft.com" data-type="external" rel="noopener noreferrer" id="copyrightLink"> Axisoft.</a> All Rights Reserved.</span></td></tr></tbody></table></section></footer></div></body></html>
