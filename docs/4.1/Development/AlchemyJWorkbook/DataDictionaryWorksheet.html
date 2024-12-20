@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Data Dictionary Worksheet · AlchemyJ</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="# Data Dictionary Worksheet"/><meta name="docsearch:version" content="4.1"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Data Dictionary Worksheet · AlchemyJ"/><meta property="og:type" content="website"/><meta property="og:url" content="//"/><meta property="og:description" content="# Data Dictionary Worksheet"/><meta property="og:image" content="/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="/css/atom-one-dark-reasonable.css"/><script src="/js/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="https://www.alchemyj.io" id="siteSubject1" target="_self"><span id="siteSubject2">Alchemy</span><span id="siteSubject3">J</span></a><span id="siteSubject4"> by</span><span> </span><a href="http://www.axisoft.com" rel="noopener noreferrer" data-type="external" data-content="http://www.axisoft.com" id="siteSubject5" target="_blank">Axisoft</a><a href="/versions"><h3>4.1</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"></ul></nav></div></header></div></div><div class="navPusher singleRowMobileNav"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="data-dictionary-worksheet"></a><a href="#data-dictionary-worksheet" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Data Dictionary Worksheet</h1>
+<p>Data Dictionary is an AlchemyJ Component which defines the properties of data items used in a model. It can be used for validation checking and data transformation. The configuration worksheet of Data Dictionary consists of two parts, <strong>Data Items</strong> - For defining the rules of validation and transformation; <strong>Error Message Settings</strong> - to customize the error message when error occurs.</p>
+<p><a href="DataDictionaryWorksheetImg/image-20191229070647376.png"><img src="DataDictionaryWorksheetImg/image-20191229070647376.png" alt=""></a></p>
+<p>After you defined the Data Dictionary, you can use AlchemyJ Extended Function <a href="../../Reference/AJExtendedFunctions/CommonFunction/ajCheckDataItem">ajCheckDataItem</a> to perform the validation and transformation in the backend. You also can use the AlchemyJ Javascript Library Function to perform the validation in the frontend. Please refer to the below samples on how to use the Data Dictionary Worksheet.</p>
+<p><a href="../../RecipeBook/DataValidation/DataValidationBackend">Data Validation (Backend)</a></p>
+<p><a href="../../RecipeBook/DataValidation/DataValidationUI">Data Validation (UI)</a></p>
+<h2><a class="anchor" aria-hidden="true" id="data-items"></a><a href="#data-items" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Data Items</h2>
+<p><strong>Basic</strong> properties of a data item.</p>
+<table>
+<thead>
+<tr><th>Property</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>Data Name</td><td>Field name<br/><br/></td></tr>
+<tr><td>Data Type</td><td>Boolean, Date, Double, File, Integer, String<br/><br/></td></tr>
+<tr><td>Display Name</td><td>Field Name which will be used for display. It is used by ajCheckDataItem when it returns an error message.<br/><br/></td></tr>
+<tr><td>Required</td><td>Y- Mandatory, N - Optional<br/><br/></td></tr>
+<tr><td>Default Value</td><td>The value to be filled in if the input value is blank.<br/><br/></td></tr>
+<tr><td>Example Value</td><td>Example Value that will be used in OpenAPI specification and Testing Tool.<br/><br/></td></tr>
+<tr><td>Description</td><td>Description to be shown in the Open API specification for this field.<br/><br/></td></tr>
+</tbody>
+</table>
+<p>Properties of a <strong>Number</strong> data item.</p>
+<table>
+<thead>
+<tr><th>Property</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>Multiple Of</td><td>The input value should be a multiple of the defined value. The decimal number is also supported. For example, if set this item as 0.5, then the field would accept values such as -0.5, 0, 0.5, 1, 1.5 but not 0.1, 1.2.<br/><br/></td></tr>
+<tr><td>Maximum</td><td>The input value should be less than or equal to the defined value.<br/><br/></td></tr>
+<tr><td>Exclusive Maximum</td><td>The input value should be less than the defined value.<br/><br/></td></tr>
+<tr><td>Minimum</td><td>The input value should be greater than or equal to the defined value.<br/><br/></td></tr>
+<tr><td>Exclusive Minimum</td><td>The input value should be greater than the defined value.<br/><br/></td></tr>
+<tr><td>Number Value List</td><td>Possible numeric values of this data item. The default separator is '-||-'. It can be changed in the <a href="AppConfigWorksheet">Application Configuration Worksheet</a>. <br />For example, 11-||-22-||-33<br/><br/></td></tr>
+<tr><td>Rounding</td><td>Round, Round Up, or Round Down<br/><br/></td></tr>
+<tr><td>Rounding Number of Digits</td><td>Number for digits to be rounded.<br/><br/></td></tr>
+</tbody>
+</table>
+<p>Properties of a <strong>String</strong> data item.</p>
+<table>
+<thead>
+<tr><th>Property</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>Max Length</td><td>Maximum number of characters.<br/><br/></td></tr>
+<tr><td>Min Length</td><td>Minimum number of characters.<br/><br/></td></tr>
+<tr><td>String Value List</td><td>Possible values of this data item.<br/><br/></td></tr>
+<tr><td>Pattern</td><td>The string pattern its value should follow. It is a regular expression.<br/><br/></td></tr>
+<tr><td>Format Type</td><td>Predefined format validation. It can be Email Address, JSON, File Path, URL, Hong Kong ID, China ID and Singapore NRIC.<br/><br/></td></tr>
+<tr><td>Case Conversion</td><td>Convert the case of the value to Lower, Upper Upper, First Letter.<br/><br/></td></tr>
+</tbody>
+</table>
+<p>Properties of a <strong>Date</strong> data item.</p>
+<table>
+<thead>
+<tr><th>Property</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>Date Format</td><td>Date format it should use.<br/><br/></td></tr>
+<tr><td>Minimum Days</td><td>The input value is a number that indicates the number of days to be added/subtracted from today. For example, Minimum Days = -8 means the date cannot be earlier than today - 8 days. Minimum Days =  4 means the date cannot be earlier than today + 4 days.<br/><br/></td></tr>
+<tr><td>On and After</td><td>The input value should be the same as or later than the date defined in this field.<br/><br/></td></tr>
+<tr><td>Maximum Days</td><td>The input value is a number that indicates the number of days to be added/subtracted from today. For example, Maximum Days = -8 means the date cannot be later than today - 8 days. Maximum Days =  4 means the date cannot be later than today + 4 days.<br/><br/></td></tr>
+<tr><td>On and Before</td><td>The input value should be the same as or earlier than the date defined in this field.<br/><br/></td></tr>
+<tr><td>Allowed Days of Week</td><td>Which day of the week is allowed. 1 to 7 stands for Monday to Sunday. Leaving it blank means any day is allowed. Multiple values are allowed here, separated by a comma.<br/><br/></td></tr>
+<tr><td>Disallow Dates</td><td>The dates are not allowed. Dates must in &quot;yyyy/mm/dd&quot; format, separated by a comma. For example, &quot;2019/3/20, 2020/1/28, 2020/10/1&quot;.<br/><br/></td></tr>
+<tr><td>Disallowed Dates Handling</td><td>This specifies how to calculate the disallowed date when Minimum Days or Maximum Days are defined.<br />When any options are selected in this field and there are disallowed dates fall in the period defined by Maximum Days and Minimum Days, the period would be recalculated. If no option is selected, the period would not be recalculated.<br />This configuration specifies how to recalculate.<br /><strong>- Next allowed date</strong>, it uses the first allowed date as the period starting or ending after skipping those disallowed dates specified by Allowed Days of Week and specified by Disallow Dates. <br/> Example 1, Allowed Days of Week = &quot;1,2,3,4,5&quot;, means Saturday and Sunday are disallowed. Minimum Days = -2. Today is Monday,  The date value becomes must be on or after last Friday. Minimum Days = -2 means it must be today - 2 = Saturday but Saturday is not allowed. As we are going backward (negative) so, the next allowed date is Friday.<br/> Example 2, Allowed Days of Week = &quot;1,2,3,4,5&quot;, means Saturday and Sunday are disallowed. Minimum Days = 2. Today is Friday. The date value becomes must be on or after next Monday.<br/><br/><strong>- Keep allowed duration</strong>, it uses the first allowed date as the period starting or ending after extending corresponding days, which depends on how many disallowed dates fall in the period.<br/> Example 1, Allowed Days of Week = &quot;1,2,3,4,5&quot;, means Saturday and Sunday are disallowed. Minimum Days = -2. Today is Monday.  The date value becomes must be on or after last Thursday. Monday - 2 = Saturday but there are two disallowed days in between, so we minus 2 again. Saturday - 2 = Thursday.<br />Example 2, Allowed Days of Week = &quot;1,2,3,4,5&quot;, means Saturday and Sunday are disallowed. Minimum Days = 2. Today is Friday. The date value must be on or after next Tuesday. Friday + 2 = Sunday but there are two disallowed dates (Sat and Sun) so we add 2 more days, therefore, it becomes Tuesday.<br/><br/></td></tr>
+<tr><td>Convert To</td><td>Transform the value to a string or a number according to the date format defined.<br/><br/></td></tr>
+</tbody>
+</table>
+<p>Properties of a <strong>File</strong> data item.</p>
+<table>
+<thead>
+<tr><th>Property</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>Min File Size</td><td>Minimum file size check in MB. <br/>For example, 100 means 100MB, 1024 means 1GB.<br/><br/></td></tr>
+<tr><td>Max File Size</td><td>Maximum file size check in MB.<br/><br/></td></tr>
+<tr><td>File Name Pattern</td><td>Use regular expression to check whether the file name matches the defined pattern.<br/><br/></td></tr>
+<tr><td>Allowed File Extension</td><td>If this is not blank, only allow files with the defined file extension. It is case insensitive. Use the comma as the separator. E.g, png, jpeg, docx<br/><br/></td></tr>
+<tr><td>Disallowed File Extension</td><td>Do not allow files with the defined extension. It is case insensitive. Use the comma as the separator. E.g, png, jpeg, docx<br/><br/></td></tr>
+<tr><td>Magic Number Check</td><td>TRUE - means the check of the allowed file extension and disallowed file extension will also check the file magic number. If the file type indicated by the magic number of the file is not the same as the file extension, the validation will fail.<br />False/empty - means do not check the magic number.<br /><br/>**A magic number is a number embedded at or near the beginning of a file that indicates its file format (i.e., the type of file it is). It is also sometimes referred to as a file signature.<br/><br/></td></tr>
+</tbody>
+</table>
+<p><strong>Note</strong> Please note that the validation regarding the file, they would not be generated into the Js file for the validation on UI.</p>
+<h2><a class="anchor" aria-hidden="true" id="error-message-settings"></a><a href="#error-message-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Error Message Settings</h2>
+<p>The error message settings section defines the error message that will be returned by ajCheckDataItem. It can be changed as needed. It supports the following place holders:</p>
+<ul>
+<li><p>[Data Name] - Replaced with the data name of the data item.</p></li>
+<li><p>[Display Name] - Replaced with the display name of the data item if it exists. If the data item has no display name, the data name will be used instead.</p></li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#data-items">Data Items</a></li><li><a href="#error-message-settings">Error Message Settings</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap" id="site_map"><table align="center" border="0"><tbody><tr><td align="right" id="copyrightTd"><span height="46px" id="copyright">Copyright © 2019 <a href="http://www.axisoft.com" target="_blank" data-content="http://www.axisoft.com" data-type="external" rel="noopener noreferrer" id="copyrightLink"> Axisoft.</a> All Rights Reserved.</span></td></tr></tbody></table></section></footer></div></body></html>
